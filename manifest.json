@@ -1,0 +1,40 @@
+{
+  "name": "Tab Group Hotkeys",
+  "description": "Adds hotkeys for manipulating tabgroups",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs", "tabGroups"
+  ],
+  "action": {
+    "default_popup": "pages/popup.html"
+  },
+  "commands": {
+    "open-tab-in-current-group": {
+      "suggested_key": {
+        "default": "Alt+T"
+      },
+      "description": "Open a tab in the current active group."
+    },
+    "create-group-in-current-tab": {
+      "suggested_key": {
+        "default": "Alt+G"
+      },
+      "description": "Move the current tab into a new group."
+    },
+    "remove-current-tab-from-group": {
+      "suggested_key": {
+        "default": "Alt+Shift+G"
+      },
+      "description": "Remove the current tab from its group."
+    }
+  }
+}

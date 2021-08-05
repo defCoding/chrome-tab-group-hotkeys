@@ -1,0 +1,71 @@
+/* popup.css */
+#popup {
+  width: 300px;
+  margin: 10px;
+}
+
+#button-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#settings-button {
+  border-radius: 10px;
+  border: none;
+}
+
+#settings-button:hover {
+  cursor: pointer;
+}
+
+#hotkeys-table {
+  border-collapse: collapse;
+  display: table;
+  margin: 10px 0 10px 0;
+}
+
+#hotkeys-table th, #hotkeys-table td {
+  border: 1px solid black;
+  width: auto;
+  padding: 0 .5em 0 .5em;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #FBFBFB;
+    color: black;
+  }
+
+  #hotkeys-table th, #hotkeys-table td {
+    border-color: #8A8A8A;
+  }
+
+  #settings-button {
+    border: 2px solid #67A9ED;
+    color: #67A9ED;
+    background-color: inherit;
+  }
+  
+  #settings-button:hover {
+    background-color: #E5F0F9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1F1F1F;
+    color: #DDDDDD;
+  }
+
+  #hotkeys-table th, #hotkeys-table td {
+    border-color: #DDDDDD;
+  }
+
+  #settings-button {
+    background-color: #3BF4E3;
+  }
+
+  #settings-button:hover {
+    background-color: #00BFAD;
+  }
+}
