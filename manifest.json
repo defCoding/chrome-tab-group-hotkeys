@@ -1,6 +1,6 @@
 {
   "name": "Tab Group Hotkeys",
-  "description": "Adds hotkeys for manipulating tabgroups",
+  "description": "Adds tab-group-related hotkeys to Chrome.",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
