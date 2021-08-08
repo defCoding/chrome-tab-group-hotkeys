@@ -12,7 +12,7 @@
     "service_worker": "background.js"
   },
   "permissions": [
-    "tabs", "tabGroups"
+    "tabGroups"
   ],
   "action": {
     "default_popup": "pages/popup.html"
